@@ -11,3 +11,4 @@
 * Feature Extraction: Crucial features related to emotions are extracted.
 * Emotion Model: A trained machine learning model (often using classification algorithms) takes these features and identifies the associated emotion.
 * Emotion Output: The system outputs the detected emotion, typically with probability or confidence scores (e.g., angry, happy, sad, neutral, etc.).
+## Results
