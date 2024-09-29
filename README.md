@@ -9,6 +9,7 @@ This project focuses on identifying emotions from speech using deep learning tec
 - [Preprocessing](#preprocessing)
 - [Model](#model)
 - [Data Augmentation](#data-augmentation)
+- [Results](#Results)
 - [Conclusion](#conclusion)
 
 ## Project Overview
@@ -57,6 +58,12 @@ To enhance the dataset and improve the model's performance, the following data a
 - Time-stretching
 - Pitch shifting
 - Shifting the audio
+
+## Results 
+![Training and Testing Loss](https://github.com/user-attachments/assets/075ce96b-eb95-45a1-b9f0-4cd3c0021df7)
+![Training and Testing Accuracy](https://github.com/user-attachments/assets/94ac7bf8-79e9-4476-85e5-4e0668483a9a)
+![Confusion Matrix](https://github.com/user-attachments/assets/1cf92071-a82b-4c65-a41f-d305a6671d0d)
+
 
 ## Conclusion
 The model successfully classifies emotions from speech with good accuracy. Data augmentation played a crucial role in improving the model's performance by making the model more robust.
