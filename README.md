@@ -1,14 +1,62 @@
 # Speech Emotion Recognition
-## Introduction
-* Speech emotion recognition (SER) is the field of technology focused on identifying the emotional state of a speaker from their voice. This goes beyond the words spoken and analyzes how they are spoken.
-* The idea behind creating this project was to build a machine-learning model that could detect emotions from the speech we have with each other all the time. Nowadays personalization is something that is needed in all the things we experience every day.
-* So why not have an emotion detector that will gauge your emotions and in the future recommend you different things based on your mood This can be used by multiple industries to offer different services like marketing companies suggesting you buy products based on your emotions, the automotive industry can detect the person emotions and adjust the speed of autonomous cars as required to avoid any collisions etc.
-## Methodology
-* Speech Input: Similar to standard speech recognition, the user's voice is recorded.
-* Dataset Used: Ryerson Audio-Visual Database of Emotional Speech and Song (Ravdess).
-* Pre-processing: The audio is prepared by removing noise and potentially isolating specific speech segments.
-* Data augmentation: Audio includes injecting noise, stretching, shifting, and adjusting pitch to diversify training data, enhancing model robustness and performance.
-* Feature Extraction: Crucial features related to emotions are extracted.
-* Emotion Model: A trained machine learning model (often using classification algorithms) takes these features and identifies the associated emotion.
-* Emotion Output: The system outputs the detected emotion, typically with probability or confidence scores (e.g., angry, happy, sad, neutral, etc.).
-## Results
+
+This project focuses on identifying emotions from speech using deep learning techniques. The dataset used is the **RAVDESS** (Ryerson Audio-Visual Database of Emotional Speech and Song), which consists of audio recordings of actors expressing various emotions.
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Dataset](#dataset)
+- [Installation](#installation)
+- [Preprocessing](#preprocessing)
+- [Model](#model)
+- [Data Augmentation](#data-augmentation)
+- [Conclusion](#conclusion)
+
+## Project Overview
+This project performs speech emotion recognition (SER) by extracting features such as Zero Crossing Rate (ZCR), MFCCs, Chroma, and Mel Spectrogram from audio files. These features are then fed into a Convolutional Neural Network (CNN) model for emotion classification.
+
+## Dataset
+The dataset used for this project is the **RAVDESS** dataset, which includes recordings of actors with different emotions such as:
+- Neutral
+- Happy
+- Sad
+- Angry
+- Fear
+- Disgust
+- Surprise
+
+## Installation
+### Dependencies:
+- Python 3.x
+- TensorFlow
+- Keras
+- Librosa
+- Matplotlib
+- Seaborn
+- Plotly
+- Pandas
+- Numpy
+- Scikit-learn
+
+## Preprocessing
+Before feeding the audio data into the model, we performed the following preprocessing steps:
+- Feature Extraction: Features such as ZCR, MFCC, Chroma, and Mel Spectrogram were extracted from the audio files using the librosa library.
+- Data Augmentation: We applied noise injection, time stretching, pitch shifting, and shifting to increase the variety of training data.
+- Normalization: StandardScaler was used to scale the features.
+
+## Model
+We built a CNN model for classification with the following architecture:
+- 4 Conv1D layers with ReLU activation and MaxPooling
+- Dropout layers to prevent overfitting
+- A fully connected Dense layer
+- Output layer with Softmax for multi-class classification
+The model was trained using the Adam optimizer and categorical crossentropy as the loss function.
+
+## Data Augmentation
+To enhance the dataset and improve the model's performance, the following data augmentation techniques were applied:
+- Adding white noise
+- Time-stretching
+- Pitch shifting
+- Shifting the audio
+
+## Conclusion
+The model successfully classifies emotions from speech with good accuracy. Data augmentation played a crucial role in improving the model's performance by making the model more robust.
