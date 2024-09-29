@@ -50,7 +50,7 @@ We built a CNN model for classification with the following architecture:
 - Dropout layers to prevent overfitting
 - A fully connected Dense layer
 - Output layer with Softmax for multi-class classification
-The model was trained using the Adam optimizer and categorical crossentropy as the loss function.
+The model was trained using the Adam optimizer and categorical cross entropy as the loss function.
 
 ## Data Augmentation
 To enhance the dataset and improve the model's performance, the following data augmentation techniques were applied:
@@ -60,7 +60,8 @@ To enhance the dataset and improve the model's performance, the following data a
 - Shifting the audio
 
 ## Results 
-![Training and Testing Loss](https://github.com/user-attachments/assets/075ce96b-eb95-45a1-b9f0-4cd3c0021df7) | ![Training and Testing Accuracy](https://github.com/user-attachments/assets/94ac7bf8-79e9-4476-85e5-4e0668483a9a)
+![Training and Testing Loss](https://github.com/user-attachments/assets/075ce96b-eb95-45a1-b9f0-4cd3c0021df7)
+![Training and Testing Accuracy](https://github.com/user-attachments/assets/94ac7bf8-79e9-4476-85e5-4e0668483a9a)
 ![Confusion Matrix](https://github.com/user-attachments/assets/1cf92071-a82b-4c65-a41f-d305a6671d0d)
 
 
